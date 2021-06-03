@@ -37,7 +37,7 @@ def main():
     pred=""
     result=0
     if st.button("Predict"):
-        result=pred_yield(row,clonesize, honeybee, bumbles, osmia,maxutrange, minutrange,avgutrange,maxltrange,minltrange,avgltrange,rainingdays,avgrainingdays,fruitset,fruitmass,seeds)
+        result=pred_yield(clonesize, honeybee, bumbles, osmia,maxutrange, minutrange,avgutrange,maxltrange,minltrange,avgltrange,rainingdays,avgrainingdays,fruitset,fruitmass,seeds)
     st.success('The output is {}'.format(result))
     if st.button("About"):
         st.text("Built with Streamlit")
