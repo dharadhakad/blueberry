@@ -35,7 +35,7 @@ def main():
     fruitmass = st.text_input('fruitmass','Type Here')
     seeds = st.text_input('seeds','Type Here')
     pred=""
-
+    result=0
     if st.button("Predict"):
         result=pred_yield(row,clonesize, honeybee, bumbles, osmia,maxutrange, minutrange,avgutrange,maxltrange,minltrange,avgltrange,rainingdays,avgrainingdays,fruitset,fruitmass,seeds)
     st.success('The output is {}'.format(result))
